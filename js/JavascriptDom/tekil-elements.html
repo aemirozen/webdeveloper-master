@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card-header">
+        <h3 class="cart-title h1" id="title">Todo App 2 </h3>
+    </div>
+
+    <ul id="task-list">
+        <li>
+            görevi 1
+        </li>
+        <li>
+            görev 2
+        </li>
+        <li>
+            görev 3
+        </li>
+    </ul>
+    <script>
+        let sonuc;
+
+        sonuc = document.getElementById("title");
+        sonuc = document.getElementById("title").id;
+        sonuc = document.getElementById("title").className;
+        sonuc = document.getElementById("title").classList;
+
+        document.getElementById("title").style.fontSize = "30px";
+        document.getElementById("title").innerText = "todo app33";
+        document.getElementById("title").innerHTML = "todo app332 ";
+
+        sonuc = document.querySelector("#title")
+
+        console.log(sonuc);
+    </script>
+</body>
+</html>
