@@ -68,3 +68,4 @@ function toplam (a, b, c) {
 
 console.log(toplam(2, 5));
 console.log(toplam(2, 5, 7));
+console.log(toplam(2, 5, 7));
