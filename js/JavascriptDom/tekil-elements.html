@@ -2,40 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width= , initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
+    
+
     <div class="card-header">
-        <h3 class="cart-title h1" id="title">Todo App 2 </h3>
+        <h3 class="card-title h1" id="title">todo app 2</h3>
     </div>
 
     <ul id="task-list">
         <li>
-            görevi 1
+            Görev 1
         </li>
         <li>
-            görev 2
+            Görev 2
         </li>
         <li>
-            görev 3
+            Görev 3
         </li>
     </ul>
+
     <script>
-        let sonuc;
+        let sonuc; // "sonuc" adlı bir değişken tanımlandı.
 
-        sonuc = document.getElementById("title");
-        sonuc = document.getElementById("title").id;
-        sonuc = document.getElementById("title").className;
-        sonuc = document.getElementById("title").classList;
+        sonuc = document.getElementById("title"); // id si "title" olan kısmı bulur ve console a yazdırır.
+        sonuc = document.getElementById("title").id; // id si "title" olan kısmı bulur ve tekrar dan id yi ekrana yazdırır.
+        sonuc = document.getElementById("title").className; // id si "title" olan kısmı bulur ve tekrar dan class ı ekrana yazdırır.
+        sonuc = document.getElementById("title").classList; // id si "title" olan kısmı bulur ve tekrar dan class listesini ekrana yazdırır.
 
-        document.getElementById("title").style.fontSize = "30px";
-        document.getElementById("title").innerText = "todo app33";
-        document.getElementById("title").innerHTML = "todo app332 ";
+        document.getElementById("title").style.fontSize = "30px"; // aynı zamanda ilgili id nin stilini de değiştirebiliriz.
+        document.getElementById("title").style.color = "blue"; // aynı zamanda ilgili id nin stilini de değiştirebiliriz.
+        // document.getElementById("title").style.display = "none"; // değeri sayfa üzerinden kaldırmaya yarar.
 
-        sonuc = document.querySelector("#title")
+        document.getElementById("title").innerText = "todo app"; // yazdığımız değeri ekrana yazdırır.
+        document.getElementById("title").innerHTML = "<p> todo app </p>";
 
-        console.log(sonuc);
+        sonuc = document.querySelector("#title"); // id si title olan elemanı seç.
+        sonuc = document.querySelector(".card-header"); // class ı card-title  olan elemanı seç.
+        sonuc = document.querySelector("div"); // ilk div elemanını yazdırır.
+
+        sonuc = document.querySelector("li:first-child"); // ilk elemanı yazdırır.
+        sonuc = document.querySelector("li:last-child"); // son elemanı yazdırır.
+        sonuc = document.querySelector("li:nth-child(2)"); // istediğimiz sıradakini yazdırır.
+
+        console.log(sonuc); // "sonuc" adlı değişkeni console'a yazdırmamızı sağlar.
     </script>
+
 </body>
 </html>
