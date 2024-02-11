@@ -37,12 +37,14 @@ function Soru(soruMetni,cevapSecenekleri,dogruCevap) {
     this.soruMetni = soruMetni;
     this.cevapSecenekleri = cevapSecenekleri;
     this.dogruCevap = dogruCevap;
-    this.cevabiKonrtolEt = function(cevap) {
-        return cevap === this.dogruCevap
-    }
+   
 
     console.log(this);
 }
+
+Soru.cevabiKonrtolEt = function(cevap) {
+    return cevap === this.dogruCevap
+} 
 
 let soru1 = new Soru("Hangisi javascript paket yönetim uygulamasidir?", { a: "Node.js", b: "Typescript",c: "Npm"}, "c");
 let soru2 = new Soru("Hangisi .net paket yönetim uygulamasidir?", { a: "Node.js", b: "nuget",c: "Npm"}, "b");
@@ -56,12 +58,5 @@ let sorular = [
 
 ]
 
-
-console.log(sorular[0],soruMetni);
-
-for (let s of sorular) {
-    console.log(s.soruMetni);
-}
-
-console.log(soru1.soruMetni);
-console.log(soru1.dogruCevap); 
+console.log(soru1.cevabiKonrtolEt("c"));
+ 
